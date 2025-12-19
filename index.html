@@ -26,7 +26,8 @@
 
                 <!-- Hidden fields for Formspree configuration -->
                 <input type="hidden" name="_cc" value="alonzofuller5957@gmail.com">
-                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="📋 New Client Intake - iTeam Legal Solutions">
+                <input type="hidden" name="_replyto" value="sponsor_email">
 
                 <!-- Sponsor Information Section -->
                 <section class="form-section">
@@ -36,50 +37,50 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="sponsorFirstName">First Name *</label>
-                            <input type="text" id="sponsorFirstName" name="sponsor_first_name" required aria-required="true">
+                            <input type="text" id="sponsorFirstName" name="SPONSOR - First Name" required aria-required="true">
                         </div>
                         <div class="form-group">
                             <label for="sponsorLastName">Last Name *</label>
-                            <input type="text" id="sponsorLastName" name="sponsor_last_name" required aria-required="true">
+                            <input type="text" id="sponsorLastName" name="SPONSOR - Last Name" required aria-required="true">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
                             <label for="sponsorEmail">Email Address *</label>
-                            <input type="email" id="sponsorEmail" name="sponsor_email" required aria-required="true">
+                            <input type="email" id="sponsorEmail" name="SPONSOR - Email" required aria-required="true">
                         </div>
                         <div class="form-group">
                             <label for="sponsorPhone">Phone Number *</label>
-                            <input type="tel" id="sponsorPhone" name="sponsor_phone" required aria-required="true" placeholder="(555) 123-4567">
+                            <input type="tel" id="sponsorPhone" name="SPONSOR - Phone" required aria-required="true" placeholder="(555) 123-4567">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="sponsorAddress">Street Address *</label>
-                        <input type="text" id="sponsorAddress" name="sponsor_address" required aria-required="true">
+                        <input type="text" id="sponsorAddress" name="SPONSOR - Street Address" required aria-required="true">
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
                             <label for="sponsorCity">City *</label>
-                            <input type="text" id="sponsorCity" name="sponsor_city" required aria-required="true">
+                            <input type="text" id="sponsorCity" name="SPONSOR - City" required aria-required="true">
                         </div>
                         <div class="form-group">
                             <label for="sponsorState">State *</label>
-                            <select id="sponsorState" name="sponsor_state" required aria-required="true">
+                            <select id="sponsorState" name="SPONSOR - State" required aria-required="true">
                                 <option value="">Select State</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="sponsorZip">ZIP Code *</label>
-                            <input type="text" id="sponsorZip" name="sponsor_zip" required aria-required="true" pattern="[0-9]{5}" maxlength="5">
+                            <input type="text" id="sponsorZip" name="SPONSOR - ZIP Code" required aria-required="true" pattern="[0-9]{5}" maxlength="5">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="howHeard">How did you hear about us? *</label>
-                        <select id="howHeard" name="how_heard" required aria-required="true">
+                        <select id="howHeard" name="SPONSOR - How They Heard About Us" required aria-required="true">
                             <option value="">Please select...</option>
                             <option value="referral">Referral from Friend/Family</option>
                             <option value="online_search">Online Search</option>
@@ -94,15 +95,15 @@
                         <label>Are you in a position to pay for legal services? *</label>
                         <div class="radio-group">
                             <label class="radio-label">
-                                <input type="radio" name="payment_ability" value="yes" required>
+                                <input type="radio" name="SPONSOR - Payment Ability" value="Yes - Can pay for legal services" required>
                                 <span>Yes</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="payment_ability" value="no" required>
+                                <input type="radio" name="SPONSOR - Payment Ability" value="No - Cannot pay for legal services" required>
                                 <span>No</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="payment_ability" value="payment_plan" required>
+                                <input type="radio" name="SPONSOR - Payment Ability" value="Need Payment Plan" required>
                                 <span>Need Payment Plan</span>
                             </label>
                         </div>
@@ -117,38 +118,38 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="clientFirstName">Client First Name *</label>
-                            <input type="text" id="clientFirstName" name="client_first_name" required aria-required="true">
+                            <input type="text" id="clientFirstName" name="CLIENT - First Name" required aria-required="true">
                         </div>
                         <div class="form-group">
                             <label for="clientLastName">Client Last Name *</label>
-                            <input type="text" id="clientLastName" name="client_last_name" required aria-required="true">
+                            <input type="text" id="clientLastName" name="CLIENT - Last Name" required aria-required="true">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="clientId">Identification Number</label>
-                        <input type="text" id="clientId" name="client_id">
+                        <input type="text" id="clientId" name="CLIENT - ID Number">
                         <small>If applicable</small>
                     </div>
 
                     <div class="form-group">
                         <label for="facilityName">Facility Name *</label>
-                        <input type="text" id="facilityName" name="facility_name" required aria-required="true">
+                        <input type="text" id="facilityName" name="FACILITY - Name" required aria-required="true">
                     </div>
 
                     <div class="form-group">
                         <label for="facilityAddress">Facility Street Address</label>
-                        <input type="text" id="facilityAddress" name="facility_address">
+                        <input type="text" id="facilityAddress" name="FACILITY - Street Address">
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
                             <label for="facilityCity">Facility City</label>
-                            <input type="text" id="facilityCity" name="facility_city">
+                            <input type="text" id="facilityCity" name="FACILITY - City">
                         </div>
                         <div class="form-group">
                             <label for="facilityState">Facility State *</label>
-                            <select id="facilityState" name="facility_state" required aria-required="true">
+                            <select id="facilityState" name="FACILITY - State" required aria-required="true">
                                 <option value="">Select State</option>
                             </select>
                         </div>
@@ -156,22 +157,22 @@
 
                     <div class="form-group">
                         <label for="county">County *</label>
-                        <input type="text" id="county" name="county" required aria-required="true">
+                        <input type="text" id="county" name="CASE - County" required aria-required="true">
                     </div>
 
                     <div class="form-group">
                         <label for="caseNumber">Case Number</label>
-                        <input type="text" id="caseNumber" name="case_number">
+                        <input type="text" id="caseNumber" name="CASE - Case Number">
                     </div>
 
                     <div class="form-group">
                         <label for="charges">Nature of Charges *</label>
-                        <input type="text" id="charges" name="charges" required aria-required="true">
+                        <input type="text" id="charges" name="CASE - Nature of Charges" required aria-required="true">
                     </div>
 
                     <div class="form-group">
                         <label for="caseDescription">Case Description *</label>
-                        <textarea id="caseDescription" name="case_description" rows="6" required aria-required="true" placeholder="Please provide details about what happened..."></textarea>
+                        <textarea id="caseDescription" name="CASE - Full Description of What Happened" rows="6" required aria-required="true" placeholder="Please provide details about what happened..."></textarea>
                         <small>Please describe the circumstances and events related to the case</small>
                     </div>
                 </section>
@@ -183,39 +184,39 @@
 
                     <div class="checkbox-group">
                         <label class="checkbox-label">
-                            <input type="checkbox" name="services[]" value="case_review">
+                            <input type="checkbox" name="SERVICES REQUESTED" value="Case Review">
                             <span>Case Review</span>
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="services[]" value="legal_representation">
+                            <input type="checkbox" name="SERVICES REQUESTED" value="Legal Representation">
                             <span>Legal Representation</span>
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="services[]" value="appeals">
+                            <input type="checkbox" name="SERVICES REQUESTED" value="Appeals">
                             <span>Appeals</span>
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="services[]" value="post_conviction">
+                            <input type="checkbox" name="SERVICES REQUESTED" value="Post-Conviction Relief">
                             <span>Post-Conviction Relief</span>
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="services[]" value="consultation">
+                            <input type="checkbox" name="SERVICES REQUESTED" value="Consultation">
                             <span>Consultation</span>
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="services[]" value="other" id="serviceOther">
+                            <input type="checkbox" name="SERVICES REQUESTED" value="Other" id="serviceOther">
                             <span>Other</span>
                         </label>
                     </div>
 
                     <div class="form-group" id="otherServiceGroup" style="display: none;">
                         <label for="otherService">Please specify other service</label>
-                        <input type="text" id="otherService" name="other_service">
+                        <input type="text" id="otherService" name="SERVICES - Other Service Details">
                     </div>
 
                     <div class="form-group">
                         <label for="additionalComments">Additional Comments or Information</label>
-                        <textarea id="additionalComments" name="additional_comments" rows="4" placeholder="Any additional information you would like to share..."></textarea>
+                        <textarea id="additionalComments" name="ADDITIONAL COMMENTS" rows="4" placeholder="Any additional information you would like to share..."></textarea>
                     </div>
                 </section>
 

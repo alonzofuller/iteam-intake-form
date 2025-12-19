@@ -187,7 +187,7 @@ function validateForm() {
     });
 
     // Check if at least one service is selected
-    const serviceCheckboxes = form.querySelectorAll('input[name="services[]"]');
+    const serviceCheckboxes = form.querySelectorAll('input[name="SERVICES REQUESTED"]');
     const isServiceSelected = Array.from(serviceCheckboxes).some(cb => cb.checked);
 
     if (!isServiceSelected) {
