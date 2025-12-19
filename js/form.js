@@ -300,50 +300,8 @@ async function handleFormSubmit(e) {
     submitBtn.disabled = true;
     submitBtn.classList.add('loading');
 
-    try {
-        // Submit form using Formspree
-        const formData = new FormData(form);
-
-        // Add formatted subject line
-        formData.append('_subject', '📋 New Client Intake Form Submission');
-
-        // Add formatted message with better structure
-        const emailBody = formatEmailBody(formData);
-        formData.append('_formatted_message', emailBody);
-
-        const response = await fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
-
-        if (response.ok) {
-            // Success - redirect to success page after short delay
-            showStatusMessage('Thank you! Your intake form has been submitted successfully. Redirecting...', 'success');
-
-            setTimeout(() => {
-                window.location.href = 'submission-success.html';
-            }, 1500);
-        } else {
-            // Error from server
-            const data = await response.json();
-            if (data.errors) {
-                const errorMessages = data.errors.map(error => error.message).join(', ');
-                showStatusMessage('Error: ' + errorMessages, 'error');
-            } else {
-                showStatusMessage('There was a problem submitting your form. Please try again.', 'error');
-            }
-        }
-    } catch (error) {
-        console.error('Form submission error:', error);
-        showStatusMessage('There was a network error. Please check your connection and try again.', 'error');
-    } finally {
-        // Re-enable submit button and remove loading state
-        submitBtn.disabled = false;
-        submitBtn.classList.remove('loading');
-    }
+    // FormSubmit handles the submission - just submit the form normally
+    form.submit();
 }
 
 // Show status message
