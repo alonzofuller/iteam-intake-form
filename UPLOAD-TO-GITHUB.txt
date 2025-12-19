@@ -1,0 +1,181 @@
+================================================================================
+📤 UPLOAD YOUR FILES TO GITHUB - EASIEST METHOD
+================================================================================
+
+Your repository is ready and empty. Let's fill it with your files!
+This method uses GitHub's website - NO command line needed!
+
+================================================================================
+STEP-BY-STEP INSTRUCTIONS
+================================================================================
+
+STEP 1: Go to Your Repository
+------------------------------
+1. Open your browser
+2. Go to: https://github.com/alonzofuller/iteam-intake-form
+3. You should see "This repository is empty"
+
+
+STEP 2: Upload Files
+------------------------------
+1. Click the "uploading an existing file" link
+   (or click "Add file" button > "Upload files")
+
+2. You'll see a page that says "Drag files here to add them to your repository"
+
+
+STEP 3: Select Your Files
+------------------------------
+1. Open File Explorer (Windows Key + E)
+
+2. Navigate to:
+   C:\Users\alonz\Downloads\Claude Code Dev\sponsor-intake-form
+
+3. Select THESE files (hold CTRL and click each one):
+   ✓ index.html
+   ✓ submission-success.html
+   ✓ .gitignore
+
+4. Also select THESE folders:
+   ✓ css (folder)
+   ✓ js (folder)
+
+   IMPORTANT: DO NOT upload these files:
+   ✗ package.json (not needed)
+   ✗ README.md (optional)
+   ✗ SETUP-GUIDE.txt (optional)
+   ✗ DEPLOY-INSTRUCTIONS.txt (optional)
+   ✗ node_modules (if it exists)
+
+
+STEP 4: Drag and Drop
+------------------------------
+1. Drag the selected files and folders from File Explorer
+
+2. Drop them onto the GitHub upload page
+
+3. Wait for all files to upload (you'll see a progress bar)
+
+
+STEP 5: Commit the Files
+------------------------------
+1. At the bottom of the page, you'll see "Commit changes"
+
+2. In the text box, type:
+   Initial commit - iTeam Legal Intake Form
+
+3. Click the green "Commit changes" button
+
+
+STEP 6: Verify Upload
+------------------------------
+After a few seconds, you'll be back at your repository page and should see:
+✓ index.html
+✓ submission-success.html
+✓ css/
+✓ js/
+
+If you see these files, SUCCESS! Continue to Step 7.
+
+
+STEP 7: Enable GitHub Pages
+------------------------------
+1. On your repository page, click "Settings" (top right)
+
+2. In the left sidebar, scroll down and click "Pages"
+
+3. Under "Source":
+   - Branch: Select "main" (or "master")
+   - Folder: Select "/ (root)"
+   - Click "Save"
+
+4. Wait about 2 minutes
+
+5. Refresh the page
+
+6. You'll see a green box at the top saying:
+   "Your site is published at https://alonzofuller.github.io/iteam-intake-form/"
+
+
+STEP 8: Test Your Form!
+------------------------------
+1. Click the URL: https://alonzofuller.github.io/iteam-intake-form/
+
+2. Your beautiful intake form should appear!
+
+3. Fill it out with test data
+
+4. Submit it
+
+5. Check your email: alonzofuller5957@gmail.com
+
+6. IMPORTANT: Click the confirmation link in the FIRST email from Formspree
+
+
+================================================================================
+EXACT FILES TO UPLOAD
+================================================================================
+
+Required files (MUST upload):
+✓ index.html
+✓ submission-success.html
+✓ css/styles.css (in css folder)
+✓ js/form.js (in js folder)
+
+Optional files (nice to have):
+- .gitignore
+- README.md
+
+Do NOT upload:
+✗ package.json
+✗ node_modules/
+✗ .git/
+✗ SETUP-GUIDE.txt
+✗ DEPLOY-INSTRUCTIONS.txt
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Q: Can't find "uploading an existing file" link?
+A: Click the green "Add file" button, then choose "Upload files"
+
+Q: Drag and drop not working?
+A: Click "choose your files" link and use the file picker instead
+
+Q: Only seeing individual files, not folders?
+A: That's OK! Upload the files individually:
+   - index.html
+   - submission-success.html
+   Then create folders and upload:
+   - Create "css" folder, upload styles.css into it
+   - Create "js" folder, upload form.js into it
+
+Q: GitHub Pages not working?
+A: Wait 2-5 minutes after enabling it, then try again
+   Make sure you selected "main" branch and "/ (root)" folder
+
+Q: Form loads but looks ugly?
+A: Make sure css/styles.css was uploaded to a "css" folder
+   Make sure js/form.js was uploaded to a "js" folder
+
+Q: Form doesn't submit?
+A: Check that Formspree confirmation email and click the link (first time only)
+
+================================================================================
+YOUR FINAL URL WILL BE:
+================================================================================
+
+https://alonzofuller.github.io/iteam-intake-form/
+
+Share this URL via:
+✉️  Email
+📱 Text message
+🔗 Add to your website
+📋 Create a QR code
+
+================================================================================
+
+You're almost there! Just upload the files through GitHub's website!
+
+================================================================================

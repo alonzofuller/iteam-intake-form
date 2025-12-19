@@ -1,0 +1,160 @@
+================================================================================
+🚀 DEPLOY YOUR FORM TO GITHUB PAGES (MOST RELIABLE METHOD)
+================================================================================
+
+Since Netlify drag-and-drop had issues, let's use GitHub Pages instead.
+It's FREE, reliable, and your form is already prepared!
+
+✅ Git repository is already initialized
+✅ All files are committed and ready
+✅ This will take about 10 minutes
+
+================================================================================
+STEP-BY-STEP INSTRUCTIONS
+================================================================================
+
+STEP 1: Create a GitHub Account (if you don't have one)
+--------------------------------------------------------
+1. Go to: https://github.com
+2. Click "Sign up"
+3. Follow the prompts to create a FREE account
+4. Verify your email address
+
+(If you already have a GitHub account, skip to Step 2)
+
+
+STEP 2: Create a New Repository
+--------------------------------
+1. Go to: https://github.com/new
+2. Fill out the form:
+
+   Repository name: iteam-intake-form
+   Description: Client intake form for iTeam Legal Solutions
+   ✓ Public (keep this selected)
+   ✗ Do NOT initialize with README (uncheck all boxes at bottom)
+
+3. Click "Create repository"
+
+
+STEP 3: Connect Your Local Files to GitHub
+-------------------------------------------
+GitHub will show you instructions. We'll use the "push an existing repository" method.
+
+Copy the repository URL shown (it looks like):
+https://github.com/YOUR-USERNAME/iteam-intake-form.git
+
+Now, open Command Prompt or PowerShell and run these commands:
+
+1. Navigate to your form folder:
+   cd "C:\Users\alonz\Downloads\Claude Code Dev\sponsor-intake-form"
+
+2. Add the GitHub remote (replace YOUR-USERNAME with your actual GitHub username):
+   git remote add origin https://github.com/YOUR-USERNAME/iteam-intake-form.git
+
+3. Rename the branch to main:
+   git branch -M main
+
+4. Push your files to GitHub:
+   git push -u origin main
+
+   (You'll be prompted to enter your GitHub username and password)
+   Note: For password, you may need to use a Personal Access Token instead
+
+
+STEP 4: Enable GitHub Pages
+----------------------------
+1. Go to your repository on GitHub:
+   https://github.com/YOUR-USERNAME/iteam-intake-form
+
+2. Click "Settings" (top menu)
+
+3. In the left sidebar, click "Pages"
+
+4. Under "Source":
+   - Select "Deploy from a branch"
+   - Branch: select "main"
+   - Folder: select "/ (root)"
+
+5. Click "Save"
+
+6. Wait about 2 minutes
+
+7. Refresh the page - you'll see a message:
+   "Your site is live at https://YOUR-USERNAME.github.io/iteam-intake-form/"
+
+
+STEP 5: Test Your Form
+-----------------------
+1. Visit your live URL:
+   https://YOUR-USERNAME.github.io/iteam-intake-form/
+
+2. Fill out the form with test data
+
+3. Submit it
+
+4. Check your email: alonzofuller5957@gmail.com
+
+5. Click the confirmation link in the FIRST email from Formspree
+
+
+================================================================================
+ALTERNATIVE: I CAN DO IT FOR YOU (NEEDS YOUR GITHUB INFO)
+================================================================================
+
+If you have a GitHub account, I can automate this process for you!
+
+Just tell me:
+1. Your GitHub username
+2. I'll give you commands to run that will deploy it automatically
+
+OR
+
+Create a Personal Access Token:
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token" > "Generate new token (classic)"
+3. Name it: "Deploy Intake Form"
+4. Check: "repo" (full control)
+5. Click "Generate token"
+6. Copy the token (starts with ghp_)
+7. Give me the token and I'll deploy it for you
+
+================================================================================
+EASIEST OPTION: USE VERCEL INSTEAD
+================================================================================
+
+Vercel has better drag-and-drop support. Try this:
+
+1. Go to: https://vercel.com/new
+2. Sign up with GitHub (easiest)
+3. Click "Add New..." > "Project"
+4. Import your GitHub repository OR
+5. Use "Deploy from templates" > "Other" > Upload files manually
+
+Their upload is more reliable than Netlify's!
+
+================================================================================
+LOCAL TESTING (WORKS RIGHT NOW)
+================================================================================
+
+You can test your form locally while deciding on deployment:
+
+1. Open File Explorer
+2. Navigate to: C:\Users\alonz\Downloads\Claude Code Dev\sponsor-intake-form
+3. Double-click: index.html
+4. Form opens in your browser
+5. Fill it out and test (submissions will work!)
+
+This works for testing but won't give you a shareable URL.
+
+================================================================================
+WHAT WOULD YOU LIKE TO DO?
+================================================================================
+
+Option A: Follow the GitHub Pages instructions above (most reliable)
+Option B: Give me your GitHub credentials and I'll deploy it for you
+Option C: Try Vercel instead (has better upload)
+Option D: Just use it locally for now (works but no shareable URL)
+
+Your form is 100% ready - we just need to get it online!
+
+================================================================================

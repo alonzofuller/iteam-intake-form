@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iTeam Legal Solutions Client Intake Form">
+    <title>iTeam Legal Solutions - Client Intake Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="form-header">
+            <h1>iTeam Legal Solutions</h1>
+            <div class="contact-info">
+                <p>1207 Coggin Ave., Brownwood, Texas</p>
+                <p>Phone: (325) 284-3747</p>
+                <p>Email: info@iteamlegalsolutions.net</p>
+            </div>
+        </header>
+
+        <div class="form-wrapper">
+            <h2 class="form-title">Client Intake Form</h2>
+            <p class="form-subtitle">Please complete all required fields marked with *</p>
+
+            <form id="intakeForm" action="https://formspree.io/f/mdanopwj" method="POST">
+
+                <!-- Hidden fields for Formspree configuration -->
+                <input type="hidden" name="_cc" value="alonzofuller5957@gmail.com">
+                <input type="hidden" name="_template" value="box">
+
+                <!-- Sponsor Information Section -->
+                <section class="form-section">
+                    <h3 class="section-title">Sponsor Information</h3>
+                    <p class="section-description">Information about the person submitting this form</p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="sponsorFirstName">First Name *</label>
+                            <input type="text" id="sponsorFirstName" name="sponsor_first_name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="sponsorLastName">Last Name *</label>
+                            <input type="text" id="sponsorLastName" name="sponsor_last_name" required aria-required="true">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="sponsorEmail">Email Address *</label>
+                            <input type="email" id="sponsorEmail" name="sponsor_email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="sponsorPhone">Phone Number *</label>
+                            <input type="tel" id="sponsorPhone" name="sponsor_phone" required aria-required="true" placeholder="(555) 123-4567">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sponsorAddress">Street Address *</label>
+                        <input type="text" id="sponsorAddress" name="sponsor_address" required aria-required="true">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="sponsorCity">City *</label>
+                            <input type="text" id="sponsorCity" name="sponsor_city" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="sponsorState">State *</label>
+                            <select id="sponsorState" name="sponsor_state" required aria-required="true">
+                                <option value="">Select State</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sponsorZip">ZIP Code *</label>
+                            <input type="text" id="sponsorZip" name="sponsor_zip" required aria-required="true" pattern="[0-9]{5}" maxlength="5">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="howHeard">How did you hear about us? *</label>
+                        <select id="howHeard" name="how_heard" required aria-required="true">
+                            <option value="">Please select...</option>
+                            <option value="referral">Referral from Friend/Family</option>
+                            <option value="online_search">Online Search</option>
+                            <option value="social_media">Social Media</option>
+                            <option value="advertisement">Advertisement</option>
+                            <option value="previous_client">Previous Client</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are you in a position to pay for legal services? *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="payment_ability" value="yes" required>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="payment_ability" value="no" required>
+                                <span>No</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="payment_ability" value="payment_plan" required>
+                                <span>Need Payment Plan</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Client Information Section -->
+                <section class="form-section">
+                    <h3 class="section-title">Client Information</h3>
+                    <p class="section-description">Information about the person who needs legal representation</p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="clientFirstName">Client First Name *</label>
+                            <input type="text" id="clientFirstName" name="client_first_name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientLastName">Client Last Name *</label>
+                            <input type="text" id="clientLastName" name="client_last_name" required aria-required="true">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clientId">Identification Number</label>
+                        <input type="text" id="clientId" name="client_id">
+                        <small>If applicable</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="facilityName">Facility Name *</label>
+                        <input type="text" id="facilityName" name="facility_name" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="facilityAddress">Facility Street Address</label>
+                        <input type="text" id="facilityAddress" name="facility_address">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="facilityCity">Facility City</label>
+                            <input type="text" id="facilityCity" name="facility_city">
+                        </div>
+                        <div class="form-group">
+                            <label for="facilityState">Facility State *</label>
+                            <select id="facilityState" name="facility_state" required aria-required="true">
+                                <option value="">Select State</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="county">County *</label>
+                        <input type="text" id="county" name="county" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caseNumber">Case Number</label>
+                        <input type="text" id="caseNumber" name="case_number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="charges">Nature of Charges *</label>
+                        <input type="text" id="charges" name="charges" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caseDescription">Case Description *</label>
+                        <textarea id="caseDescription" name="case_description" rows="6" required aria-required="true" placeholder="Please provide details about what happened..."></textarea>
+                        <small>Please describe the circumstances and events related to the case</small>
+                    </div>
+                </section>
+
+                <!-- Services Requested Section -->
+                <section class="form-section">
+                    <h3 class="section-title">Services Requested</h3>
+                    <p class="section-description">Please select all services you are seeking</p>
+
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services[]" value="case_review">
+                            <span>Case Review</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services[]" value="legal_representation">
+                            <span>Legal Representation</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services[]" value="appeals">
+                            <span>Appeals</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services[]" value="post_conviction">
+                            <span>Post-Conviction Relief</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services[]" value="consultation">
+                            <span>Consultation</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services[]" value="other" id="serviceOther">
+                            <span>Other</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group" id="otherServiceGroup" style="display: none;">
+                        <label for="otherService">Please specify other service</label>
+                        <input type="text" id="otherService" name="other_service">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalComments">Additional Comments or Information</label>
+                        <textarea id="additionalComments" name="additional_comments" rows="4" placeholder="Any additional information you would like to share..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Terms and Submission -->
+                <section class="form-section">
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms_agreement" required aria-required="true">
+                            <span>I acknowledge that the information provided is accurate to the best of my knowledge and I consent to iTeam Legal Solutions using this information to evaluate the case. *</span>
+                        </label>
+                    </div>
+
+                    <div class="privacy-notice">
+                        <p><strong>Privacy Notice:</strong> Your information will be kept confidential and used solely for the purpose of evaluating your legal needs. We do not share your information with third parties without your consent.</p>
+                    </div>
+                </section>
+
+                <!-- Submit Button -->
+                <div class="submit-container">
+                    <button type="submit" class="submit-btn" id="submitBtn">Submit Intake Form</button>
+                </div>
+
+                <!-- Status Messages -->
+                <div id="statusMessage" class="status-message" style="display: none;"></div>
+            </form>
+        </div>
+
+        <footer class="form-footer">
+            <p>&copy; 2024 iTeam Legal Solutions. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>
